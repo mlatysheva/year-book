@@ -1,0 +1,20 @@
+.cart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  padding-left: 5px;
+  background-image: url("../../../assets/icons/shopping-basket.svg");
+  background-repeat: no-repeat;
+
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(14%) sepia(95%) saturate(7230%) hue-rotate(2deg) brightness(98%) contrast(118%);
+    transition: filter 0.3s;
+  }
+}

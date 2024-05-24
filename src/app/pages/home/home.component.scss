@@ -1,0 +1,76 @@
+.bg-image {
+  position: absolute;
+  top: var(--header-height);
+  left: 0;
+  bottom: var(--footer-height);
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(
+      rgba(5, 5, 5, 0.5),
+      rgba(0, 0, 0, 0.5)
+  ),
+  url("../../../assets/images/vintageCollage.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-image::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20px;
+  height: 20px; 
+  background: linear-gradient(to top, rgba(197, 110, 23, 0.3), rgba(112, 66, 20, 0));
+  pointer-events: none; 
+}
+
+.bg-image::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  height: 20px; 
+  background: linear-gradient(to bottom, rgba(197, 110, 23, 0.3), rgba(112, 66, 20, 0));
+  pointer-events: none; 
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.content {
+  margin-left: 30%;
+  margin-top: 10%;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.create-btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 2rem;
+  border: none;
+  letter-spacing: 1px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 0 0 20px rgba(116, 58, 4, 0.7);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+}

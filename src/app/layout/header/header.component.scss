@@ -1,0 +1,22 @@
+.wrapper {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: var(--header-height);
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../../assets/images/logo.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
