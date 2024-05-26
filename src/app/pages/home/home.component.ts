@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -8,5 +9,9 @@ import { MatButtonModule } from '@angular/material/button';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  constructor(private router: Router) {}
 
+  navigateToCreate() {
+    this.router.navigate(['/create']);
+  }
 }
