@@ -17,8 +17,11 @@ app-root, app-header, app-footer {
   color: var(--text-color);
 }
 
-app-footer {
-  margin-top: auto;
+app-root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -28,13 +31,6 @@ a {
   &:hover {
     color: var(--accent-color);
   }
-}
-
-.container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 .main {
